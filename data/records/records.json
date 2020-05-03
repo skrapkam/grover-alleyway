@@ -1,0 +1,30 @@
+[
+    {
+      "title": "Nothing was gained under the sun",
+      "type": "Album",
+      "date": "2020",
+      "url":"/nothing-was-gained-under-the-sun",
+      "image": {
+        "src": "../../src/images/records/nothing-was-gained-under-the-sun.jpg"
+      }
+    },
+    {
+      "title": "bl33din' luv",
+      "type": "Single",
+      "date": "2019",
+      "url":"/bl33din-luv",
+      "image": {
+        "src": "../../src/images/records/bl33din-luv.jpg"
+      }
+    },
+    
+    {
+      "title": "Barely Tolerable",
+      "type": "Album",
+      "date": "2019",
+      "url":"/barely-tolerable",
+      "image": {
+        "src": "../../src/images/records/barely-tolerable.jpg"
+      }
+    }
+  ]
