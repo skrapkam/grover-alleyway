@@ -2,7 +2,6 @@ import React from "react"
 import Back from '../../components/Back'
 import { GlobalStyle } from "../../reset";
 import { RecordTitle, Info, Content, CoverStyle, Wrapper, Tracks, Metadata, ListenButton, ListenButtonWrapper } from '../../styles'
-import { Link } from "gatsby"
 import Img from "gatsby-image";
 
 import { graphql } from "gatsby";
@@ -24,9 +23,9 @@ const index = props => (
                     <Img fluid={props.data.cover.childImageSharp.fluid} />
                     <ListenButtonWrapper>
                     <ul>
-                       <a target="_blank" href="https://open.spotify.com/album/5c4iAypdvqgsmZlCqjwzR8"><li> <ListenButton>Spotify</ListenButton></li></a> 
-                       <a target="_blank" href="https://geo.music.apple.com/us/album/_/1469600060?mt=1&app=music&at=1000lHKX"><li><ListenButton>Apple Music</ListenButton></li></a> 
-                       <a target="_blank" href="https://groveralleyway.bandcamp.com/album/barely-tolerable"><li><ListenButton>Bandcamp</ListenButton></li></a> 
+                       <a rel="noopener noreferrer" target="_blank" href="https://open.spotify.com/album/5c4iAypdvqgsmZlCqjwzR8"><li> <ListenButton>Spotify</ListenButton></li></a> 
+                       <a rel="noopener noreferrer" target="_blank" href="https://geo.music.apple.com/us/album/_/1469600060?mt=1&app=music&at=1000lHKX"><li><ListenButton>Apple Music</ListenButton></li></a> 
+                       <a rel="noopener noreferrer" target="_blank" href="https://groveralleyway.bandcamp.com/album/barely-tolerable"><li><ListenButton>Bandcamp</ListenButton></li></a> 
                     </ul>
                     </ListenButtonWrapper>
                 </CoverStyle>

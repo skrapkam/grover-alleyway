@@ -1,5 +1,4 @@
-/** @jsx jsx */ import Link from "gatsby-link";
-import styled from "@emotion/styled";
+/** @jsx jsx */
 import { Component } from "react";
 import { jsx } from "@emotion/core";
 

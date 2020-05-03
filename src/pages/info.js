@@ -2,7 +2,6 @@ import React from "react"
 import Back from '../components/Back'
 import { Wrapper } from '../styles'
 import { GlobalStyle } from "../reset";
-import Img from "gatsby-image";
 import { css } from '@emotion/core'
 
 import { graphql } from "gatsby";

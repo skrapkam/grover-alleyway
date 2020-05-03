@@ -2,7 +2,6 @@ import React from "react"
 import Back from '../../components/Back'
 import { GlobalStyle } from "../../reset";
 import { RecordTitle, Info, Content, CoverStyle, Wrapper, Tracks, Metadata, ListenButton, ListenButtonWrapper } from '../../styles'
-import { Link } from "gatsby"
 import Img from "gatsby-image";
 
 import { graphql } from "gatsby";
@@ -24,10 +23,10 @@ const index = props => (
                     <Img fluid={props.data.cover.childImageSharp.fluid} />
                     <ListenButtonWrapper>
                     <ul>
-                       <a target="_blank" href="https://open.spotify.com/album/3M9LOI2vb8GK6Dqox7B4Ih"><li> <ListenButton>Spotify</ListenButton></li></a> 
-                       <a target="_blank" href="https://geo.music.apple.com/us/album/_/1495702669?mt=1&app=music&at=1000lHKX"><li><ListenButton>Apple Music</ListenButton></li></a> 
-                       <a target="_blank" href="https://listen.tidal.com/album/128484513"><li> <ListenButton>Tidal</ListenButton></li></a>
-                       <a target="_blank" href="https://groveralleyway.bandcamp.com/album/nothing-was-gained-under-the-sun"><li><ListenButton>Bandcamp</ListenButton></li></a> 
+                       <a rel="noopener noreferrer" target="_blank" href="https://open.spotify.com/album/3M9LOI2vb8GK6Dqox7B4Ih"><li> <ListenButton>Spotify</ListenButton></li></a> 
+                       <a rel="noopener noreferrer" target="_blank" href="https://geo.music.apple.com/us/album/_/1495702669?mt=1&app=music&at=1000lHKX"><li><ListenButton>Apple Music</ListenButton></li></a> 
+                       <a rel="noopener noreferrer" target="_blank" href="https://listen.tidal.com/album/128484513"><li> <ListenButton>Tidal</ListenButton></li></a>
+                       <a rel="noopener noreferrer" target="_blank" href="https://groveralleyway.bandcamp.com/album/nothing-was-gained-under-the-sun"><li><ListenButton>Bandcamp</ListenButton></li></a> 
                     </ul>
                     </ListenButtonWrapper>
                 </CoverStyle>
