@@ -3,7 +3,7 @@ import Back from '../components/Back'
 import { Wrapper } from '../styles'
 import { GlobalStyle } from "../reset";
 import { css } from '@emotion/core'
-
+import { Helmet } from "react-helmet"
 import { graphql } from "gatsby";
 
 const info = css`
@@ -13,14 +13,24 @@ const info = css`
 
 const index = props => (
     <Wrapper>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>Info | GROVER ALLEYWAY</title>
+            <meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1" />
+            <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0, minimum-scale=1, viewport-fit=cover"
+            />
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+        </Helmet>
         <GlobalStyle />
 
         <Back />
 
         <div css={info}>
-           <p>"Chuck Dukowski from Black Flag said he'd rather work a day job for the rest of his life than be dependent on his music for his living."—Ian MacKaye</p>
-           <p>Thanks for listening.</p>
-           <p>groveralleyway@gmail.com</p>
+            <p>"Chuck Dukowski from Black Flag said he'd rather work a day job for the rest of his life than be dependent on his music for his living."—Ian MacKaye</p>
+            <p>Thanks for listening.</p>
+            <p>groveralleyway@gmail.com</p>
         </div>
 
     </Wrapper>

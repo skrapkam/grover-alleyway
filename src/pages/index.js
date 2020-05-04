@@ -7,6 +7,8 @@ import Header from "../components/header";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import Link from "gatsby-link";
+import { Helmet } from "react-helmet"
+
 
 const Wrapper = styled.div`
   padding: 32px;
@@ -186,6 +188,16 @@ const Music = ({ data }) => {
 
   return (
     <Wrapper>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>GROVER ALLEYWAY</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1, viewport-fit=cover"
+        />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+      </Helmet>
       <GlobalStyle />
 
       <Header>

@@ -3,13 +3,23 @@ import Back from '../../components/Back'
 import { GlobalStyle } from "../../reset";
 import { RecordTitle, Info, Content, CoverStyle, Wrapper, Tracks, Metadata, ListenButton, ListenButtonWrapper } from '../../styles'
 import Img from "gatsby-image";
-
+import { Helmet } from "react-helmet"
 import { graphql } from "gatsby";
 
 
 
 const index = props => (
     <Wrapper>
+           <Helmet>
+        <meta charSet="utf-8" />
+        <title>NOTHING WAS GAINED UNDER THE SUN | GROVER ALLEYWAY</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1, viewport-fit=cover"
+        />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+      </Helmet>
         <GlobalStyle />
 
         <Back />
