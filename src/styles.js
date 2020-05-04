@@ -88,3 +88,8 @@ export const ListenButtonWrapper = styled.div`
   margin-top: 32px;
 
 `
+
+export const Back = styled.div`
+margin-bottom: 56px;
+text-decoration: underline;
+`

@@ -1,9 +1,10 @@
 import React from "react"
-import { Wrapper } from '../styles'
+import { Back, Wrapper } from '../styles'
 import { GlobalStyle } from "../reset";
 import { css } from '@emotion/core'
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby";
+import Link from "gatsby-link";
 
 const info = css`
     max-width: 650px;
@@ -24,7 +25,9 @@ const index = props => (
         </Helmet>
         <GlobalStyle />
 
-
+        <Back>
+        <Link to="/">← GROVER ALLEYWAY</Link>
+        </Back>
         <div css={info}>
             <p>"Chuck Dukowski from Black Flag said he'd rather work a day job for the rest of his life than be dependent on his music for his living."—Ian MacKaye</p>
             <p>Thanks for listening.</p>

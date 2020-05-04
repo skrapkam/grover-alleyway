@@ -1,9 +1,10 @@
 import React from "react"
 import { GlobalStyle } from "../../reset";
-import { RecordTitle, Info, Content, CoverStyle, Wrapper, Tracks, Metadata, ListenButton, ListenButtonWrapper } from '../../styles'
+import {Back, RecordTitle, Info, Content, CoverStyle, Wrapper, Tracks, Metadata, ListenButton, ListenButtonWrapper } from '../../styles'
 import Img from "gatsby-image";
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby";
+import Link from "gatsby-link";
 
 
 
@@ -21,7 +22,9 @@ const index = props => (
       </Helmet>
         <GlobalStyle />
 
-
+        <Back>
+        <Link to="/">← GROVER ALLEYWAY</Link>
+        </Back>
         <div>
             <RecordTitle>bl33din' luv</RecordTitle>
 
