@@ -1,5 +1,4 @@
 import React from "react"
-import Back from '../../components/Back'
 import { GlobalStyle } from "../../reset";
 import { RecordTitle, Info, Content, CoverStyle, Wrapper, Tracks, Metadata, ListenButton, ListenButtonWrapper } from '../../styles'
 import Img from "gatsby-image";
@@ -22,7 +21,6 @@ const index = props => (
       </Helmet>
         <GlobalStyle />
 
-        <Back />
 
         <div>
             <RecordTitle>Nothing Was Gained Under The Sun</RecordTitle>
