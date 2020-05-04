@@ -237,8 +237,7 @@ export const GlobalStyle = () => (
         padding-top: 0;
         margin-bottom: 1.45rem;
         color: inherit;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-family: Arial;
         font-weight: bold;
         text-rendering: optimizeLegibility;
         font-size: 2.25rem;
@@ -254,8 +253,7 @@ export const GlobalStyle = () => (
         padding-top: 0;
         margin-bottom: 1.45rem;
         color: inherit;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-family: Arial;
         font-weight: bold;
         text-rendering: optimizeLegibility;
         font-size: 1.62671rem;
@@ -271,8 +269,7 @@ export const GlobalStyle = () => (
         padding-top: 0;
         margin-bottom: 1.45rem;
         color: inherit;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-family: Arial;
         font-weight: bold;
         text-rendering: optimizeLegibility;
         font-size: 1.38316rem;
@@ -288,8 +285,7 @@ export const GlobalStyle = () => (
         padding-top: 0;
         margin-bottom: 1.45rem;
         color: inherit;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-family: Arial;
         font-weight: bold;
         text-rendering: optimizeLegibility;
         font-size: 1rem;
@@ -305,8 +301,7 @@ export const GlobalStyle = () => (
         padding-top: 0;
         margin-bottom: 1.45rem;
         color: inherit;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-family: Arial;
         font-weight: bold;
         text-rendering: optimizeLegibility;
         font-size: 0.85028rem;
@@ -322,8 +317,7 @@ export const GlobalStyle = () => (
         padding-top: 0;
         margin-bottom: 1.45rem;
         color: inherit;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-family: Arial;
         font-weight: bold;
         text-rendering: optimizeLegibility;
         font-size: 0.78405rem;
