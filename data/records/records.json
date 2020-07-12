@@ -1,4 +1,13 @@
 [
+  {
+    "title": "Inverted Love Song",
+    "type": "Single",
+    "date": "2020",
+    "url":"/inverted-love-song",
+    "image": {
+      "src": "../../src/images/records/inverted-love-song.jpg"
+    }
+  },
     {
       "title": "Nothing was gained under the sun",
       "type": "Album",
