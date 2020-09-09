@@ -1,5 +1,14 @@
 [
   {
+    "title": "Dither",
+    "type": "Single",
+    "date": "2020",
+    "url":"/dither",
+    "image": {
+      "src": "../../src/images/records/dither.png"
+    }
+  },
+  {
     "title": "Inverted Love Song",
     "type": "Single",
     "date": "2020",
