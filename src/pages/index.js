@@ -10,6 +10,7 @@ import Link from "gatsby-link";
 import { Helmet } from "react-helmet"
 
 
+
 const Wrapper = styled.div`
   padding: 32px;
 `
@@ -142,6 +143,7 @@ ${Image} {
 `
 
 
+
 const Button = styled.button`
   background: #fff;
   border: none;
@@ -169,6 +171,16 @@ const active = css`
     opacity: 50%;
   }
 `
+
+const Blinker = keyframes`
+50% { opacity: 0; }
+
+`
+
+const blink = css`
+animation: ${Blinker} 0.15s step-end infinite;
+`
+
 const InfoLink = styled.div`
   display: block;
   text-transform: uppercase;
@@ -186,9 +198,18 @@ const HeaderStyled = styled.div`
 `
 
 const Music = ({ data }) => {
-
-  
   const [state, showGrid] = useState(true)
+
+  const [name, setName] = useState(false)
+
+  function toggleName() {
+    setName(true)
+    console.log(name)
+  }
+
+  function toggleOffName(){
+    setName(false)
+  }
 
   React.useEffect(() => {
     const data = localStorage.getItem('my-tier-list');
@@ -212,6 +233,9 @@ const Music = ({ data }) => {
     console.log(state)
 
   }
+
+  
+
 
  
   return (
@@ -243,12 +267,15 @@ const Music = ({ data }) => {
 
       </Header>
 
-      <Name>Grover Alleyway</Name>
+      <Name css={name === true ? blink : ''}>Grover Alleyway</Name>
 
       <Container isVisible={state}>
+        
         {data.records.edges.map(({ node }) => (
 
-          <a href={node.url}>
+          
+
+          <a onDragStart={toggleName}  onDragEnd={toggleOffName} href={node.url}>
 
             <Image>
               <Img
