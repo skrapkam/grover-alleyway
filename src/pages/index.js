@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react'
-import { css } from '@emotion/core'
+import { css, keyframes } from '@emotion/core'
 import styled from '@emotion/styled'
 import { GlobalStyle } from "../reset";
 import Header from "../components/header";
@@ -66,8 +66,21 @@ text-transform: uppercase;
 
 `
 
+const Fade = keyframes`
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+`;
+
+ 
 const Container = styled.div`
   display: grid;
+  animation: ${Fade} .5s ease-in;
+
+  opacity: 1;
   grid-template-columns: ${props =>
     props.isVisible
       ? 'repeat(auto-fill, minmax(1fr))'
@@ -137,16 +150,16 @@ const Button = styled.button`
   text-decoration: underline;
   cursor: pointer;
   text-transform: uppercase;
-  margin-left: 16px;
-
+  margin-left: 16px;    
+  }
 `
 const ButtonContainer = styled.div`
 text-align: right;
 
 `
 const active = css`
-background: #000;
-color: white;
+  background: #000;
+  color: white;
   text-decoration: none!important;
   border-radius: 45px;
   padding-left: 8px;
@@ -173,7 +186,20 @@ const HeaderStyled = styled.div`
 `
 
 const Music = ({ data }) => {
+
+  
   const [state, showGrid] = useState(true)
+
+  React.useEffect(() => {
+    const data = localStorage.getItem('my-tier-list');
+    if (data) {
+      showGrid(JSON.parse(data));
+    }
+  }, []); 
+
+  React.useEffect(() => {
+    localStorage.setItem('my-tier-list', JSON.stringify(state))
+  });
 
   function toggleGrid() {
     showGrid(true)
@@ -187,6 +213,7 @@ const Music = ({ data }) => {
 
   }
 
+ 
   return (
     <Wrapper>
       <Helmet>
