@@ -1,5 +1,14 @@
 [
   {
+    "title": "An Amalgam of Waves",
+    "type": "Album",
+    "date": "2021",
+    "url":"/an-amalgam-of-waves",
+    "image": {
+      "src": "../../src/images/records/an-amalgam-of-waves.jpg"
+    }
+  },
+  {
     "title": "Dither",
     "type": "Single",
     "date": "2020",

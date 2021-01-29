@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react'
-import { css } from '@emotion/core'
+import { css, keyframes } from '@emotion/core'
 import styled from '@emotion/styled'
 import { GlobalStyle } from "../reset";
 import Header from "../components/header";
@@ -8,6 +8,7 @@ import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import Link from "gatsby-link";
 import { Helmet } from "react-helmet"
+
 
 
 const Wrapper = styled.div`
@@ -66,8 +67,21 @@ text-transform: uppercase;
 
 `
 
+const Fade = keyframes`
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+`;
+
+ 
 const Container = styled.div`
   display: grid;
+  animation: ${Fade} .5s ease-in;
+
+  opacity: 1;
   grid-template-columns: ${props =>
     props.isVisible
       ? 'repeat(auto-fill, minmax(1fr))'
@@ -129,6 +143,7 @@ ${Image} {
 `
 
 
+
 const Button = styled.button`
   background: #fff;
   border: none;
@@ -137,16 +152,16 @@ const Button = styled.button`
   text-decoration: underline;
   cursor: pointer;
   text-transform: uppercase;
-  margin-left: 16px;
-
+  margin-left: 16px;    
+  }
 `
 const ButtonContainer = styled.div`
 text-align: right;
 
 `
 const active = css`
-background: #000;
-color: white;
+  background: #000;
+  color: white;
   text-decoration: none!important;
   border-radius: 45px;
   padding-left: 8px;
@@ -156,6 +171,16 @@ color: white;
     opacity: 50%;
   }
 `
+
+const Blinker = keyframes`
+50% { opacity: 0; }
+
+`
+
+const blink = css`
+animation: ${Blinker} 0.15s step-end infinite;
+`
+
 const InfoLink = styled.div`
   display: block;
   text-transform: uppercase;
@@ -175,6 +200,28 @@ const HeaderStyled = styled.div`
 const Music = ({ data }) => {
   const [state, showGrid] = useState(true)
 
+  const [name, setName] = useState(false)
+
+  function toggleName() {
+    setName(true)
+    console.log(name)
+  }
+
+  function toggleOffName(){
+    setName(false)
+  }
+
+  React.useEffect(() => {
+    const data = localStorage.getItem('my-tier-list');
+    if (data) {
+      showGrid(JSON.parse(data));
+    }
+  }, []); 
+
+  React.useEffect(() => {
+    localStorage.setItem('my-tier-list', JSON.stringify(state))
+  });
+
   function toggleGrid() {
     showGrid(true)
     console.log(state)
@@ -187,6 +234,10 @@ const Music = ({ data }) => {
 
   }
 
+  
+
+
+ 
   return (
     <Wrapper>
       <Helmet>
@@ -216,12 +267,15 @@ const Music = ({ data }) => {
 
       </Header>
 
-      <Name>Grover Alleyway</Name>
+      <Name css={name === true ? blink : ''}>Grover Alleyway</Name>
 
       <Container isVisible={state}>
+        
         {data.records.edges.map(({ node }) => (
 
-          <a href={node.url}>
+          
+
+          <a onDragStart={toggleName}  onDragEnd={toggleOffName} href={node.url}>
 
             <Image>
               <Img
