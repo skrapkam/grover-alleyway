@@ -12,7 +12,7 @@ const index = props => (
     <Wrapper>
            <Helmet>
         <meta charSet="utf-8" />
-        <title>BLEEDIN' LUV | GROVER ALLEYWAY</title>
+        <title>BL33DIN' LUV | GROVER ALLEYWAY</title>
         <meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1" />
         <meta
           name="viewport"

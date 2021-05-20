@@ -1,5 +1,14 @@
 [
   {
+    "title": "Rave Type Song",
+    "type": "Single",
+    "date": "2021",
+    "url":"/rave-type-song",
+    "image": {
+      "src": "../../src/images/records/rave-type-song.png"
+    }
+  },
+  {
     "title": "An Amalgam of Waves",
     "type": "Album",
     "date": "2021",

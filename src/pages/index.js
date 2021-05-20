@@ -98,6 +98,7 @@ const Container = styled.div`
     text-decoration: underline;
   }
 
+
   ${Title} {
     ${props =>
     props.isVisible
