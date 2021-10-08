@@ -60,7 +60,7 @@ const index = props => (
                         <ul>
                             <li>Release type: Single</li>
                             <li>Release date: 05.20.2021</li>
-                            <li><p>Special thanks to Sarah.</p></li>
+                            <li><p>Special thank you to Sarah.</p></li>
                         </ul>
                     </Metadata>
 
