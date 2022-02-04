@@ -72,6 +72,7 @@ export const ListenButton = styled.button`
   height: 48px;
   text-transform: uppercase;
   cursor: pointer;
+  color: #000;
 
   &:hover {
       background: #000;
