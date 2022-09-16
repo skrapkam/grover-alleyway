@@ -27,6 +27,7 @@ export const Info = styled.div`
 `
 
 export const Tracks = styled.div`
+      padding-right: 5vw;
 `
 
 export const Metadata = styled.div`

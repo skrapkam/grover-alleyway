@@ -1,5 +1,13 @@
 [
-
+  {
+    "title": "My Love was a Fool",
+    "type": "Single",
+    "date": "2022",
+    "url":"/my-love-was-a-fool",
+    "image": {
+      "src": "../../src/images/records/my-love-was-a-fool.jpg"
+    }
+  },
   {
     "title": "His Agony / Her Apathy",
     "type": "Single",
