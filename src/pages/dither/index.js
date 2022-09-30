@@ -34,10 +34,10 @@ const index = props => (
                     <Img fluid={props.data.cover.childImageSharp.fluid} />
                     <ListenButtonWrapper>
                     <ul>
-                       <a rel="noopener noreferrer" target="_blank" href="https://open.spotify.com/album/3Ed2vd1yX1MEkUondCH1IB?si=aQ48GcH8QC62nsCj-lW-Vw"><li> <ListenButton>Spotify</ListenButton></li></a> 
-                       <a rel="noopener noreferrer" target="_blank" href="https://music.apple.com/us/album/dither/1530275857?i=1530275858&uo=4&app=music&at=1000lHKX"><li><ListenButton>Apple Music</ListenButton></li></a> 
-                       <a rel="noopener noreferrer" target="_blank" href="https://listen.tidal.com/album/154022688/track/154022689"><li> <ListenButton>Tidal</ListenButton></li></a>
-                       <a rel="noopener noreferrer" target="_blank" href="https://groveralleyway.bandcamp.com/album/dither"><li><ListenButton>Bandcamp</ListenButton></li></a> 
+                       <a aria-label="Spotify" rel="noopener noreferrer" target="_blank" href="https://open.spotify.com/album/3Ed2vd1yX1MEkUondCH1IB?si=aQ48GcH8QC62nsCj-lW-Vw"><li> <ListenButton>Spotify</ListenButton></li></a> 
+                       <a aria-label="Apple Music" rel="noopener noreferrer" target="_blank" href="https://music.apple.com/us/album/dither/1530275857?i=1530275858&uo=4&app=music&at=1000lHKX"><li><ListenButton>Apple Music</ListenButton></li></a> 
+                       <a aria-label="Tidal" rel="noopener noreferrer" target="_blank" href="https://listen.tidal.com/album/154022688/track/154022689"><li> <ListenButton>Tidal</ListenButton></li></a>
+                       <a aria-label="Bandcamp" rel="noopener noreferrer" target="_blank" href="https://groveralleyway.bandcamp.com/album/dither"><li><ListenButton>Bandcamp</ListenButton></li></a> 
                     </ul>
                     </ListenButtonWrapper>
                 </CoverStyle>

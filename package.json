@@ -20,7 +20,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "sharp": "^0.31.0"
   },
   "devDependencies": {
     "prettier": "2.2.1"
@@ -37,6 +38,9 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "resolutions": {
+    "sharp": "^0.29.0"
   },
   "repository": {
     "type": "git",

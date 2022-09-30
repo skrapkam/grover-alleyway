@@ -35,13 +35,13 @@ const index = props => (
                     <Img fluid={props.data.cover.childImageSharp.fluid} />
                     <ListenButtonWrapper>
                     <ul>
-                       <a rel="noopener noreferrer" target="_blank" href="https://open.spotify.com/track/4gthmYUcT2J5W8BWTpu5Di"><li> <ListenButton>Spotify</ListenButton></li></a> 
+                       <a aria-label="Spotify" rel="noopener noreferrer" target="_blank" href="https://open.spotify.com/track/4gthmYUcT2J5W8BWTpu5Di"><li> <ListenButton>Spotify</ListenButton></li></a> 
 
-                       <a rel="noopener noreferrer" target="_blank" href="https://geo.music.apple.com/us/album/_/1566687284?i=1566687286&mt=1&app=music&ls=1&at=1000lHKX"><li><ListenButton>Apple Music</ListenButton></li></a> 
+                       <a aria-label="Apple Music" rel="noopener noreferrer" target="_blank" href="https://geo.music.apple.com/us/album/_/1566687284?i=1566687286&mt=1&app=music&ls=1&at=1000lHKX"><li><ListenButton>Apple Music</ListenButton></li></a> 
                        
-                       <a rel="noopener noreferrer" target="_blank" href="https://listen.tidal.com/track/183453372"><li> <ListenButton>Tidal</ListenButton></li></a>
+                       <a aria-label="Tidal" rel="noopener noreferrer" target="_blank" href="https://listen.tidal.com/track/183453372"><li> <ListenButton>Tidal</ListenButton></li></a>
                        
-                       <a rel="noopener noreferrer" target="_blank" href="https://groveralleyway.bandcamp.com/track/rave-type-song"><li><ListenButton>Bandcamp</ListenButton></li></a> 
+                       <a aria-label="Bandcamp" rel="noopener noreferrer" target="_blank" href="https://groveralleyway.bandcamp.com/track/rave-type-song"><li><ListenButton>Bandcamp</ListenButton></li></a> 
                     </ul>
                     </ListenButtonWrapper>
                 </CoverStyle>

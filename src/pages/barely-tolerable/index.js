@@ -35,9 +35,9 @@ const index = props => (
                     <Img fluid={props.data.cover.childImageSharp.fluid} />
                     <ListenButtonWrapper>
                     <ul>
-                       <a rel="noopener noreferrer" target="_blank" href="https://open.spotify.com/album/5c4iAypdvqgsmZlCqjwzR8"><li> <ListenButton>Spotify</ListenButton></li></a> 
-                       <a rel="noopener noreferrer" target="_blank" href="https://geo.music.apple.com/us/album/_/1469600060?mt=1&app=music&at=1000lHKX"><li><ListenButton>Apple Music</ListenButton></li></a> 
-                       <a rel="noopener noreferrer" target="_blank" href="https://groveralleyway.bandcamp.com/album/barely-tolerable"><li><ListenButton>Bandcamp</ListenButton></li></a> 
+                       <a aria-label="Spotify" rel="noopener noreferrer" target="_blank" href="https://open.spotify.com/album/5c4iAypdvqgsmZlCqjwzR8"><li> <ListenButton>Spotify</ListenButton></li></a> 
+                       <a aria-label="Apple Music" rel="noopener noreferrer" target="_blank" href="https://geo.music.apple.com/us/album/_/1469600060?mt=1&app=music&at=1000lHKX"><li><ListenButton>Apple Music</ListenButton></li></a> 
+                       <a aria-label="Bandcamp" rel="noopener noreferrer" target="_blank" href="https://groveralleyway.bandcamp.com/album/barely-tolerable"><li><ListenButton>Bandcamp</ListenButton></li></a> 
                     </ul>
                     </ListenButtonWrapper>
                 </CoverStyle>

@@ -35,13 +35,13 @@ const index = props => (
                     <Img fluid={props.data.cover.childImageSharp.fluid} />
                     <ListenButtonWrapper>
                         <ul>
-                            <a rel="noopener noreferrer" target="_blank" href="https://open.spotify.com/album/5Pd9cABy9Jx5wCDl7Mna54?si=a2b2682669f0495b"><li> <ListenButton>Spotify</ListenButton></li></a>
+                            <a aria-label="Spotify" rel="noopener noreferrer" target="_blank" href="https://open.spotify.com/album/5Pd9cABy9Jx5wCDl7Mna54?si=a2b2682669f0495b"><li> <ListenButton>Spotify</ListenButton></li></a>
 
-                            <a rel="noopener noreferrer" target="_blank" href="https://geo.music.apple.com/us/album/_/1604505378?mt=1&app=music&ls=1&at=1000lHKX&itscg=30200&itsct=songlink_music"><li><ListenButton>Apple Music</ListenButton></li></a>
+                            <a aria-label="Apple Music" rel="noopener noreferrer" target="_blank" href="https://geo.music.apple.com/us/album/_/1604505378?mt=1&app=music&ls=1&at=1000lHKX&itscg=30200&itsct=songlink_music"><li><ListenButton>Apple Music</ListenButton></li></a>
 
-                            <a rel="noopener noreferrer" target="_blank" href="https://listen.tidal.com/album/212064914"><li> <ListenButton>Tidal</ListenButton></li></a>
+                            <a aria-label="Tidal" rel="noopener noreferrer" target="_blank" href="https://listen.tidal.com/album/212064914"><li> <ListenButton>Tidal</ListenButton></li></a>
 
-                            <a rel="noopener noreferrer" target="_blank" href="https://groveralleyway.bandcamp.com/album/his-agony-her-apathy"><li><ListenButton>Bandcamp</ListenButton></li></a>
+                            <a aria-label="Bandcamp" rel="noopener noreferrer" target="_blank" href="https://groveralleyway.bandcamp.com/album/his-agony-her-apathy"><li><ListenButton>Bandcamp</ListenButton></li></a>
                         </ul>
                     </ListenButtonWrapper>
                 </CoverStyle>
