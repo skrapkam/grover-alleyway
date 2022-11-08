@@ -64,7 +64,7 @@ const index = props => (
             <ul>
               <li>Release type: Single</li>
               <li>Release date: 09.30.2022</li>
-              <li>Whale watching with you in Newport Beach</li>
+              <li>Whale watching with you in Newport Beach.</li>
 
             </ul>
           </Metadata>
