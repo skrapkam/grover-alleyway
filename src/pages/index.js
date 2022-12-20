@@ -140,8 +140,6 @@ ${Image} {
  
 `
 
-
-
 const Button = styled.button`
   background: #fff;
   border: none;
