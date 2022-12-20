@@ -1,12 +1,12 @@
 
 import React, { useState } from 'react'
-import { css, keyframes } from '@emotion/core'
+import { css, keyframes } from '@emotion/react'
 import styled from '@emotion/styled'
 import { GlobalStyle } from "../reset";
 import Header from "../components/header";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
-import Link from "gatsby-link";
+import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 
 
@@ -82,8 +82,8 @@ const Container = styled.div`
   animation: ${Fade} .5s ease-in;
 
   opacity: 1;
-  grid-template-columns: ${props =>
-    props.isVisible
+  grid-template-columns: ${({isVisible}) =>
+  isVisible
       ? 'repeat(auto-fill, minmax(1fr))'
       : 'repeat(auto-fill, minmax(16rem, 1fr))'};
   column-gap: 40px;
@@ -100,12 +100,11 @@ const Container = styled.div`
 
 
   ${Title} {
-    ${props =>
-    props.isVisible
+    ${({isVisible}) =>
+    isVisible
       ? 'display:block'
       : 'display:none'};
   }
-}
 
 ${Type} {
 
@@ -113,32 +112,30 @@ ${Type} {
     display: none!important;
   }
   
-  ${props =>
-    props.isVisible
+  ${({isVisible}) =>
+  isVisible
       ? 'display:block'
       : 'display:none'};
 }
-}
+
 
 
 ${Date} {
-
-
-  ${props =>
-    props.isVisible
+  ${({isVisible}) =>
+  isVisible
       ? 'display:block'
       : 'display:none'};
 }
-}
+
 
 ${Image} {
 
-  ${props =>
-    props.isVisible
+  ${({isVisible}) =>
+  isVisible
       ? 'display:none'
       : 'display:block'};
 }
-}
+
 
  
 `
@@ -301,10 +298,9 @@ const Music = ({ data }) => {
 
 export default Music;
 
-
 export const RecordsQuery = graphql`
   query {
-    records: allRecordsJson(sort: { fields: [date], order: DESC }) {
+    records: allRecordsJson(sort: {date: DESC}) {
       edges {
         node {
           title

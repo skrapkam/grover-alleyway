@@ -1,10 +1,10 @@
 import React from "react"
 import { Back, Wrapper } from '../styles'
 import { GlobalStyle } from "../reset";
-import { css } from '@emotion/core'
+import { css } from '@emotion/react'
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby";
-import Link from "gatsby-link";
+import { Link } from "gatsby"
 
 const info = css`
     max-width: 650px;

@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby";
 
-import Link from "gatsby-link";
+import { Link } from "gatsby"
 
 
 const index = props => (
