@@ -1,5 +1,14 @@
 [
   {
+    "title": "WHY SHOULD MY HEART BE SAD?",
+    "type": "Album",
+    "date": "2024",
+    "url":"/why-should-my-heart-be-sad",
+    "image": {
+      "src": "../../src/images/records/WSMHBS.jpg"
+    }
+  },
+  {
     "title": "A Heart Like Mine Is Hard To Find",
     "type": "Single",
     "date": "2023",
